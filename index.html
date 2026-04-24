@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>JEF'EL Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="jef_el_0.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+        <span class="jefel">JEF’EL</span><span class="tech">TECH</span>
+    </div>
+
+    <!-- Menu -->
+    <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="actualite.html">Actualités</a>
+        <a href="a-propos.html">À propos</a>
+    </nav>
+
+    <!-- Bouton -->
+    <button class="btn-nav" onclick="scrollToJoin()">S’abonner</button>
+
+</header>
+<!-- FIN NAVIGATION -->
+
+<!-- ================= HERO ================= -->
+<div class="quote-box">
+    <p id="quote-text" class="quote">
+        “ Vous n'avez pas besoin d'attendre de permission pour accomplir quelque chose de grand. ”
+    </p>
+
+    <div class="quote-buttons">
+        <button onclick="likeQuote()">❤️ J'aime</button>
+        <button onclick="copyQuote()">📋 Copier</button>
+        <button onclick="newQuote()">🔄 Nouvelle citation</button>
+    </div>
+</div>
+
+<!-- ================= INVITÉES ================= -->
+<section class="women-container">
+    <h2 class="section-title">Nos invitées : des femmes d'<span>exception</span></h2>
+
+    <div class="women-card">
+        <img src="images/image5.jpeg" alt="Coura Carine SENE">
+        <h3>Coura Carine SENE</h3>
+        <p>Regional Director Wave Mobile Money Group</p>
+        <a href="https://www.linkedin.com/in/coura-carine-tine-sene/" target="_blank">En savoir plus</a>
+    </div>
+
+    <div class="women-card">
+        <img src="images/image6.jpeg">
+        <h3>Fatou Sow KANE</h3>
+        <p>Directrice Générale EXPRESSO SENEGAL </p>
+        <a href="https://www.linkedin.com/in/fatou-sow-kane-0200a525/" target="_blank">En savoir plus</a>
+    </div>
+
+    <div class="women-card">
+        <img src="images/image7.jpeg">
+        <h3>Nafy DIAGNE</h3>
+        <p>Chief Executive Officer de STELLARIX SENEGAL</p>
+        <a href="https://www.linkedin.com/in/nafydiagne/" target="_blank">En savoir plus</a>
+    </div>
+
+    <div class="women-card">
+        <img src="images/image8.jpeg">
+        <h3>Fama Sow DIOP</h3>
+        <p>Chargée de la Promotion de la Culture, de l'Innovation et de la Science à (ANRSA)</p>
+        <a href="https://www.linkedin.com/company/anrsa-agence-nationale-de-la-recherche-scientifique-appliqu%C3%A9e/" target="_blank">En savoir plus</a>
+    </div>
+
+    <div class="women-card">
+        <img src="images/image9.jpeg">
+        <h3>Fatou NGOM</h3>
+        <p>Docteure et Ingénieure en Informatique à l'ESP</p>
+        <a href="https://esp.sn/" target="_blank">En savoir plus</a>
+    </div>
+
+    <div class="women-card">
+        <img src="images/image10.jpeg">
+        <h3>Penda BATHILY</h3>
+        <p>Chief Executive Officer & Co-fondatrice de YOWIT </p>
+        <a href="https://www.linkedin.com/in/mame-penda-bathily-21797979?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">En savoir plus</a>
+    </div>
+</section>
+
+<!-- ================= FEMMES D'EXCEPTION ================= -->
+<section class="women">
+    <h2 class="section-title">Autres Femmes <span>d’Exception</span></h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="images/img1.jpg">
+            <h3>Fatoumata Ba</h3>
+            <p class="titre">Entrepreneure Tech</p>
+            <p class="infos">Innovation digitale et inclusion financière.</p>
+            <a href="https://fr.wikipedia.org/wiki/Fatoumata_B%C3%A2" target="_blank">En savoir plus</a>
+        </div>
+
+        <div class="card">
+            <img src="images/img2.jpg">
+            <h3>Rebecca Enonchong</h3>
+            <p class="titre">Investisseuse</p>
+            <p class="infos">Soutien aux startups africaines.</p>
+            <a href="https://fr.wikipedia.org/wiki/Rebecca_Enonchong" target="_blank">En savoir plus</a>
+        </div>
+
+        <div class="card">
+            <img src="images/img3.jpg">
+            <h3>Reshma Saujani</h3>
+            <p class="titre">Girls Who Code</p>
+            <p class="infos">Réduction du gap femmes-tech.</p>
+            <a href="https://fr.wikipedia.org/wiki/Reshma_Saujani" target="_blank">En savoir plus</a>
+        </div>
+
+        <div class="card">
+            <img src="images/img4.jpg">
+            <h3>Juliana Rotich</h3>
+            <p class="titre">Ushahidi</p>
+            <p class="infos">Innovation technologique mondiale.</p>
+            <a href="https://fr.wikipedia.org/wiki/Juliana_Rotich" target="_blank">En savoir plus</a>
+        </div>
+    </div>
+</section>
+
+<section class="join" id="join-section">
+    <div class="join-container">
+
+        <!-- Texte à gauche -->
+        <div class="join-text">
+            <h2>Rejoignez le mouvement</h2>
+            <p>
+                Inscrivez-vous pour recevoir des portraits exclusifs, des opportunités de mentorat et l'essentiel de l'actualité tech.
+            </p>
+        </div>
+
+        <!-- Formulaire à droite -->
+        <div class="join-form">
+            <label>Votre adresse email</label>
+            <input type="email" placeholder="exemple@gmail.com">
+            <button onclick="subscribeUser()">S'abonner maintenant</button>
+            <small>Zéro spam. Uniquement de l'inspiration pure.</small>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo + slogan -->
+        <div class="footer-col">
+            <h2 class="footer-logo">JEF’EL <span>TECH</span></h2>
+            <p>L’action qui valorise, l’Afrique qui innove.</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+            <h3>Navigation</h3>
+            <a href="#">Accueil</a>
+            <a href="#">Actualités</a>
+            <a href="#">À propos</a>
+        </div>
+
+        <!-- Contact / Infos -->
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Email : contact@jefeltech.com</p>
+            <p>Dakar, Sénégal</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Recevez de l’inspiration chaque semaine.</p>
+
+            <div class="newsletter">
+                <input type="email" placeholder="Votre email">
+                <button>📩</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bas -->
+    <div class="title-line1"></div>
+
+    <div class="footer-bottom">
+        <p>© 2026 JEF’EL Tech — Tous droits réservés</p>
+    </div>
+
+</footer>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+const quotes = [
+
+/* MARKETING & DIGITAL */
+"Tu n’as pas besoin d’être parfaite pour commencer, tu as besoin de commencer pour évoluer.",
+"Ta voix a de la valeur, même dans un monde rempli de contenu.",
+"Comprendre les données, c’est apprendre à comprendre les gens.",
+"Le digital n’est pas réservé aux experts, il appartient à celles qui osent apprendre.",
+"Chaque idée que tu partages peut toucher quelqu’un, quelque part.",
+"Tu peux être douce et stratégique à la fois.",
+"Derrière chaque écran, il y a des opportunités pour celles qui observent et analysent.",
+"Créer du contenu, c’est bien. Créer de l’impact, c’est mieux.",
+"La technologie n’est pas compliquée, elle devient puissante quand tu la comprends.",
+"Ta différence peut devenir ta meilleure stratégie.",
+
+/* ÉTUDES */
+"Tu n’as pas besoin d’être parfaite à l’école, tu as besoin d’être constante.",
+"Chaque leçon apprise aujourd’hui te rapproche de la femme que tu veux devenir.",
+"Même quand c’est difficile, ton cerveau est en train de grandir.",
+"Apprendre, c’est te donner des opportunités que personne ne peut t’enlever.",
+"Tu es plus capable que tes doutes ne le laissent croire.",
+"Chaque effort compte, même ceux que personne ne voit.",
+"Les erreurs ne sont pas des échecs, ce sont des explications.",
+"Tu construis ton avenir à chaque page que tu ouvres.",
+"Ce que tu comprends aujourd’hui peut changer ta vie demain.",
+"Rien n’est impossible à celle qui apprend avec patience.",
+
+/* CONFIANCE */
+"Ta douceur n’est pas une faiblesse, c’est une force silencieuse.",
+"Tu n’as pas besoin d’être validée pour être légitime.",
+"Ta voix mérite d’être entendue, même si elle tremble.",
+"Être toi-même est déjà un acte de courage.",
+"La confiance révèle qui tu es vraiment.",
+"Tu peux être forte et sensible à la fois.",
+"Ce que tu penses de toi compte plus que ce que les autres disent.",
+"Grandir, c’est apprendre à ne plus douter de sa valeur.",
+"Tu es suffisante, même dans les jours où tu en doutes.",
+"Ta lumière n’a pas besoin de diminuer pour laisser briller celle des autres."
+];
+
+let current = 0;
+const quoteText = document.getElementById("quote-text");
+
+function afficherQuote(text) {
+    quoteText.innerHTML = "“ " + text + " ”";
+}
+
+function newQuote() {
+    quoteText.classList.add("hide");
+
+    setTimeout(() => {
+        let newIndex;
+
+        do {
+            newIndex = Math.floor(Math.random() * quotes.length);
+        } while (newIndex === current);
+
+        current = newIndex;
+        afficherQuote(quotes[current]);
+
+        quoteText.classList.remove("hide");
+    }, 400);
+}
+
+function copyQuote() {
+    navigator.clipboard.writeText(quoteText.textContent);
+    alert("Citation copiée !");
+}
+
+function likeQuote() {
+    alert("❤️ Ajoutée !");
+}
+
+function scrollToJoin() {
+    document.getElementById("join-section").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function subscribeUser() {
+    const email = document.querySelector(".join-form input").value;
+
+    if (email === "") {
+        alert("Veuillez entrer votre email !");
+    } else {
+        alert("🎉 Bienvenue dans la communauté JEF'EL TECH !");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>JEF'EL Tech</title>
+</head>
+<body>
+<!-- NAVIGATION -->
+<header class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+        <span class="jefel">JEF’EL</span><span class="tech">TECH</span>
+    </div>
+
+    <!-- Menu -->
+    <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="actualite.html">Actualités</a>
+        <a href="a-propos.html">À propos</a>
+    </nav>
+
+    <!-- Bouton -->
+    <button class="btn-nav">S’abonner</button>
+
+</header>
+<!-- FIN NAVIGATION -->
+ 
+<section class="hero">
+    <p class="mission">Notre mission</p>
+        <h2>L'action qui valorise, l'Afrique qui<br> innove.</h2>
+        <p>Encourager et inspirer les jeunes filles à s'intéresser à la technologie.</p>
+</section>
+<section class="team">
+    <h3 class="mission">L'Equipe JEF'EL Tech.</h3>
+    <p>Une équipe d'étudiantes passionnées à la technologie et l'innovation</p>
+</section>
+    <div class="cards">
+        <div class="card">
+            <img src="images/fiile1.JPEG"alt="Tanisha">
+            <h4 class="name">Tanisha Diane s.s.z</h4>
+            <p class="niveau">Etudiante en Master1 AI</p>
+        </div>
+        <div class="card">
+            <img src="images/fille2.JPEG"alt="Mariama">
+            <h4 class="name">Mariama Faty</h4>
+            <p class="niveau">Etudiante en licence 1 en Big Data</p>
+                
+        </div>
+        <div class="card">
+            <img src="images/fille3.JPEG" alt="Naba">
+            <h4 class="name">Naba Doumbia</h4>
+            <p class="niveau">Etudiante en licence 1 en Big Data</p>
+        </div>
+
+        <div class="card">
+            <img src="images/fille5.JPEG" alt="Djiré">
+            <h4 class="name">Fatoumata Djiré</h4>
+            <p class="niveau">Etudiante en licence 1 en Big Data</p>
+        </div>
+        <div class="card">
+            <img src="images/fille4.JPEG"alt="Cissé">
+            <h4 class="name">Fatoumata Binetou Cissé</h4>
+            <p class="niveau">Etudiante en licence1 en Business et marketing digital</p>
+        </div>
+        <div class="card">
+            <img src="images/fille6.JPEG"alt="Tiffany">
+            <h4 class="name">Tiffany Gnanssounou</h4>
+            <p class="niveau">Etudiante en licence1 en Business et marketing digital</p>
+            
+        </div>
+    </div>
+
+<section class="about">
+    <h2 class="section-title">
+        <span id="typing-title"></span>
+    </h2>
+
+    <p class="about-text" id="typing-text"></p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo + slogan -->
+        <div class="footer-col">
+            <h2 class="footer-logo">JEF’EL <span>TECH</span></h2>
+            <p>L’action qui valorise, l’Afrique qui innove.</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+            <h3>Navigation</h3>
+            <a href="#">Accueil</a>
+            <a href="#">Actualités</a>
+            <a href="#">À propos</a>
+        </div>
+
+        <!-- Contact / Infos -->
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Email : contact@jefeltech.com</p>
+            <p>Dakar, Sénégal</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Recevez de l’inspiration chaque semaine.</p>
+
+            <div class="newsletter">
+                <input type="email" placeholder="Votre email">
+                <button>📩</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bas -->
+    <div class="title-line1"></div>
+
+    <div class="footer-bottom">
+        <p>© 2026 JEF’EL Tech — Tous droits réservés</p>
+    </div>
+
+</footer>
+
+<script>
+const title = "À propos de JEF’EL Tech";
+
+const textes = [  
+"JEF’EL Tech est une initiative dédiée à mettre en lumière les femmes africaines dans le domaine du digital, de la technologie et de l’innovation.",
+"",
+"Notre objectif est d’inspirer, d’informer et de connecter une nouvelle génération de jeunes filles ambitieuses prêtes à s’imposer dans le monde numérique.",
+"",
+"À travers des événements, des portraits inspirants et des contenus éducatifs, nous créons un espace où chaque femme peut apprendre, évoluer et révéler son potentiel."
+];
+
+let i = 0;
+let j = 0;
+
+const speed = 30;
+const pause = 800;
+
+const titleElement = document.getElementById("typing-title");
+const textElement = document.getElementById("typing-text");
+
+// typing titre
+function typeTitle() {
+    if (i < title.length) {
+        titleElement.innerHTML += title.charAt(i);
+        i++;
+        setTimeout(typeTitle, speed);
+    } else {
+        setTimeout(typeText, pause);
+    }
+}
+
+// typing texte (multi lignes)
+function typeText() {
+    if (j < textes.length) {
+
+        let line = textes[j];
+        let k = 0;
+
+        function typeLine() {
+            if (k < line.length) {
+                textElement.innerHTML += line.charAt(k);
+                k++;
+                setTimeout(typeLine, speed);
+            } else {
+                textElement.innerHTML += "<br><br>";
+                j++;
+                setTimeout(typeText, pause);
+            }
+        }
+
+        typeLine();
+    }
+}
+
+let started = false;
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !started) {
+            started = true;
+            typeTitle();
+        }
+    });
+}, {
+    threshold: 0.9 // déclenche quand 50% de la section est visible
+});
+
+observer.observe(document.querySelector(".about"));
+
+</script>
+
+</body>
+</html>

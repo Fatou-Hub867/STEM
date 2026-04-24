@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="jef_el.css">
+	<title>JEF'EL Tech</title>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+        <span class="jefel">JEF’EL</span><span class="tech">TECH</span>
+    </div>
+
+    <!-- Menu -->
+    <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="actualite.html">Actualités</a>
+        <a href="a-propos.html">À propos</a>
+    </nav>
+
+    <!-- Bouton -->
+    <button class="btn-nav">S’abonner</button>
+
+</header>
+<!-- FIN NAVIGATION -->
+
+<section class="actus">
+    <h1>Actualités Tech</h1>
+    <p class="subtitle">
+        Restez informée des dernières tendances, découvrez des parcours inspirants et accédez à des ressources pour propulser votre carrière dans le numérique.
+    </p>
+
+    <div class="cards">
+
+        <!-- Carte 1 -->
+        <div class="card">
+            <img src="images/ia.jpg" alt="IA">
+            <div class="card-content">
+                <h3>L’IA au cœur des innovations 2026</h3>
+                <div class="infos">
+                    <span>📅 16/04/2026</span>
+                    <span>⏱ 14:39</span>
+                </div>
+                <p>
+                    Les dernières tendances montrent que l’IA dépasse le digital pour s’intégrer dans les robots, les véhicules et les objets du quotidien.
+                </p>
+                <a href="https://www.prnewswire.com/apac/news-releases/forresters-top-10-emerging-technologies-for-2026-ai-is-no-longer-confined-to-digital-workflows-302744387.html?utm_source=chatgpt.com" target="_blank">En savoir plus +</a>
+            </div>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="card">
+            <img src="images/siri.jpg" alt="Siri">
+            <div class="card-content">
+                <h3>Apple accélère sa stratégie IA pour Siri</h3>
+                <div class="infos">
+                    <span>📅 17/04/2026</span>
+                    <span>⏱ 08:09</span>
+                </div>
+                <p>
+                    Apple prépare une nouvelle version de Siri et envoie ses ingénieurs suivre des formations intensives en IA pour améliorer les performances.
+                </p>
+                <a href="https://timesofindia.indiatimes.com/technology/tech-news/just-weeks-before-big-siri-launch-apple-may-send-away-dozens-of-its-engineers-for-a-multiweek-bootcamp/articleshow/130321156.cms?utm_source=chatgpt.com" target="_blank">En savoir plus +</a>
+            </div>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="card">
+            <img src="images/pc.jpg" alt="PC">
+            <div class="card-content">
+                <h3>L’IA transforme le futur des ordinateurs</h3>
+                <div class="infos">
+                    <span>📅 12/04/2026</span>
+                    <span>⏱ 00:00</span>
+                </div>
+                <p>
+                    Apple prépare une nouvelle version de Siri et envoie ses ingénieurs suivre des formations intensives en IA pour améliorer les performances.
+                </p>
+                <a href="https://timesofindia.indiatimes.com/technology/tech-news/just-weeks-before-big-siri-launch-apple-may-send-away-dozens-of-its-engineers-for-a-multiweek-bootcamp/articleshow/130321156.cms?utm_source=chatgpt.com" target="_blank">En savoir plus +</a>
+            </div>
+        </div>
+
+        <!--  Carte 4 -->
+        <div class="card">
+            <img src="images/drone.jpg" alt="drone">
+            <div class="card-content">
+                <h3>Les drones : voir le monde sous un autre angle!</h3>
+                <div class="infos">
+                    <span>📅 12/04/2026</span>
+                    <span>⏱ 00:00</span>
+                </div>
+                <p>Pas seulement un objet volant mais une science, des fils, des cables et un peu de techno-magie pour voir sous un nouveau jour.   
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Drone" target="_blank">En savoir plus +</a>
+            </div>
+            
+        </div>
+
+        <!--  Carte 5 -->
+        <div class="card">
+            <img src="images/programmation.jpg" alt="programmation">
+            <div class="card-content">
+                <h3>La programmation, un art.</h3>
+                <div class="infos">
+                    <span>📅 13/04/2026</span>
+                    <span>⏱ 05:00</span>
+                </div>
+                <p>En avril 2026, la programmation ne se limite plus à l'écriture manuelle de code ; elle est entrée dans l'ère des agents autonomes et de la collaboration homme-machine.  
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Programmation_informatique" target="_blank">En savoir plus +</a>
+            </div>
+            
+        </div>
+
+         <!--  Carte 6 -->
+        <div class="card">
+            <img src="images/robotique.jpg" alt="La robotique">
+            <div class="card-content">
+                <h3>La robotique.</h3>
+                <div class="infos">
+                    <span>📅 15/04/2026</span>
+                    <span>⏱ 15:00</span>
+                </div>
+                <p>L'actualité de la robotique en 2026 est marquée par une transition majeure : les robots sortent enfin des usines pour s'intégrer dans notre quotidien, portés par les avancées spectaculaires de l'intelligence artificielle.
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Robotique" target="_blank">En savoir plus +</a>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+
+<section class="actu-slider">
+    <h2>À la une</h2>
+
+    <div class="slider">
+
+    <button class="nav-btn prev" onclick="prevActu()">❮</button>
+
+    <div id="actu-text" class="slide"></div>
+
+    <button class="nav-btn next" onclick="nextActu()">❯</button>
+
+</div>
+</section>
+
+<section class="join">
+    <div class="join-container">
+
+        <!-- Texte à gauche -->
+        <div class="join-text">
+            <h2>Rejoignez le mouvement</h2>
+            <p>
+                Inscrivez-vous pour recevoir des portraits exclusifs, des opportunités de mentorat et l'essentiel de l'actualité tech.
+            </p>
+        </div>
+
+        <!-- Formulaire à droite -->
+        <div class="join-form">
+            <label>Votre adresse email</label>
+            <input type="email" placeholder="exemple@gmail.com">
+            <button>S'abonner maintenant</button>
+            <small>Zéro spam. Uniquement de l'inspiration pure.</small>
+        </div>
+
+    </div>
+</section>
+<!-- =====SECTION JAVASCRIPT===== -->
+<script>
+const actus = [
+    {
+        titre: "Femmes africaines et startups",
+        texte: "Les femmes africaines prennent de plus en plus de place dans les startups technologiques.",
+        lien: "#"
+    },
+    {
+        titre: "Mentorat dans la tech",
+        texte: "Des programmes de mentorat encouragent les jeunes filles à rejoindre la tech.",
+        lien: "#"
+    },
+    {
+        titre: "Girls in Tech",
+        texte: "Des adolescentes sont formées à la robotique et à l’IA.",
+        lien: "#"
+    }
+];
+
+let index = 0;
+const text = document.getElementById("actu-text");
+
+function afficherActu() {
+    text.innerHTML = `
+        <strong>${actus[index].titre}</strong><br>
+        ${actus[index].texte}<br>
+        <a href="${actus[index].lien}" target="_blank">Lire plus</a>
+    `;
+}
+
+function nextActu() {
+    text.style.transition = "none";
+    text.style.transform = "translateX(100%)";
+    text.style.opacity = "0";
+
+    setTimeout(() => {
+        index = (index + 1) % actus.length;
+        afficherActu();
+
+        text.style.transition = "all 0.6s ease";
+        text.style.transform = "translateX(0)";
+        text.style.opacity = "1";
+    }, 50);
+}
+
+function prevActu() {
+    text.style.transition = "none";
+    text.style.transform = "translateX(-100%)";
+    text.style.opacity = "0";
+
+    setTimeout(() => {
+        index = (index - 1 + actus.length) % actus.length;
+        afficherActu();
+
+        text.style.transition = "all 0.6s ease";
+        text.style.transform = "translateX(0)";
+        text.style.opacity = "1";
+    }, 50);
+}
+
+setInterval(nextActu, 5000);
+
+afficherActu();
+</script>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo + slogan -->
+        <div class="footer-col">
+            <h2 class="footer-logo">JEF’EL <span>TECH</span></h2>
+            <p>L’action qui valorise, l’Afrique qui innove.</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+            <h3>Navigation</h3>
+            <a href="#">Accueil</a>
+            <a href="#">Actualités</a>
+            <a href="#">À propos</a>
+        </div>
+
+        <!-- Contact / Infos -->
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Email : contact@jefeltech.com</p>
+            <p>Dakar, Sénégal</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Recevez de l’inspiration chaque semaine.</p>
+
+            <div class="newsletter">
+                <input type="email" placeholder="Votre email">
+                <button>📩</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bas -->
+    <div class="title-line1"></div>
+
+    <div class="footer-bottom">
+        <p>© 2026 JEF’EL Tech — Tous droits réservés</p>
+    </div>
+
+</footer>
+
+</body>
+</html>
